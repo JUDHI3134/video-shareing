@@ -25,6 +25,10 @@ const UserSchema = new mongoose.Schema({
     subscribedUser:{
         type: [String]
     },
+    fromGoogle:{
+        type: Boolean,
+        default: false
+    }
 },{timestamps: true})
 
 export default mongoose.model("User",UserSchema)
